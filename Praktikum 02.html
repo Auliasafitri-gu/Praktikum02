@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Gantungan Kunci</title>
+</head>
+
+<body>
+
+  <form action="terima_kasih.html" method="get">
+    <table border="0" width="100%" cellpadding="10">
+      <tr valign="top">
+        
+        <td width="30%" align="center">
+          <table border="1" width="180" height="180">
+            <tr>
+              <td align="center" valign="middle">
+                <img src="akrilik.jpg" alt="Foto Gantungan Kunci" width="180" height="180">
+              </td>
+            </tr>
+          </table>
+          <br>
+          <small><b> Gantungan Kunci</b></small>
+        </td>
+
+        <td width="70%">
+          <fieldset>
+            <legend>Informasi Pemesanan Gantungan Kunci Akrilik</legend>
+
+            <p>
+              <label for="title">Nama Produk :</label><br>
+              <input type="text" id="title" name="title" value="Gantungan Kunci Akrilik Rp10.000" size="40" readonly>
+            </p>
+
+            <p>
+              <label for="description">Deskripsi Produk :</label><br>
+              <textarea id="description" name="description" rows="5" cols="40" readonly>Bahan : Akrilik Transparan 3mm&#10;&#10;Ukuran : 4cm x 5cm&#10;&#10;Kondisi : Baru</textarea>
+            </p>
+
+            <p>
+              <label for="karakter">Pilih Karakter / Motif Katalog :</label><br>
+              <select id="karakter" name="karakter" required>
+                <option value="">-- Pilih Karakter Katalog --</option>
+                <option value="Karakter 1">Karakter 1 - Kartun A</option>
+                <option value="Karakter 2">Karakter 2 - Kartun B</option>
+                <option value="Karakter 3">Karakter 3 - Minimalis / Aesthetics</option>
+                <option value="Karakter 4">Karakter 4 - Floral / Bunga</option>
+                <option value="Karakter 5">Karakter 5 - Hewan Lucu</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="transaction">Jumlah Pesanan :</label><br>
+              <select id="transaction" name="transaction" required>
+                <option value="1">1 Pcs</option>
+                <option value="2">2 Pcs</option>
+                <option value="3" selected>3 Pcs</option>
+                <option value="5">5 Pcs</option>
+                <option value="10">10 Pcs</option>
+              </select><br>
+              <small><i>* silakan pilih jumlah gantungan kunci yang ingin dipesan</i></small>
+            </p>
+
+            <p>
+              <label for="account_number">Nomor Rekening Pembayaran :</label><br>
+              <input type="text" id="account_number" name="account_number" value="123-456-789-0" size="40">
+            </p>
+
+            <p>
+              <label for="bank">Bank Tujuan :</label><br>
+              <select id="bank" name="bank">
+                <option value="BCA" selected>BCA</option>
+                <option value="Mandiri">Mandiri</option>
+                <option value="BNI">BNI</option>
+                <option value="BRI">BRI</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="account_holder">Nama Pemilik Rekening :</label><br>
+              <input type="text" id="account_holder" name="account_holder" value="Nama Pemilik Rekening" size="40">
+            </p>
+
+            <p>
+              <input type="checkbox" id="send_mobile" name="send_mobile" checked>
+              <label for="send_mobile">Kirim Notifikasi ke Nomor HP</label><br>
+              <input type="checkbox" id="send_email" name="send_email" checked>
+              <label for="send_email">Kirim Notifikasi ke Email</label>
+            </p>
+
+            <p>
+              <label for="phone_number">Kirim ke Nomor HP :</label><br>
+              <input type="text" id="phone_number" name="phone_number" value="081234567890" size="40">
+            </p>
+
+            <p>
+              <label for="email">Kirim ke Email :</label><br>
+              <input type="text" id="email" name="email" value="pembeli@gmail.com" size="40">
+            </p>
+          </fieldset>
+        </td>
+
+      </tr>
+    </table>
+
+    <p align="center">
+      <br>
+      <input type="submit" value="Selesai & Kirim">
+      <input type="reset" value="Kembali ke Tautan Awal">
+    </p>
+
+  </form>
+
+</body>
+</html>
+  
